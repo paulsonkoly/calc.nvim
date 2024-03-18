@@ -4,11 +4,13 @@
 (string_lit) @string
 
 (kwwhile) @keyword.repeat
+(kwfor) @keyword.repeat
 [
   (kwif)
   (kwelse)
 ] @keyword.conditional
 (kwreturn) @keyword.return
+(kwyield) @keyword.return
 
 [
  (relationalop)
@@ -17,6 +19,7 @@
  (divmulop)
  (unaryop)
  (arrowop)
+ (larrowop)
  (assignop)
 ] @operator
 
