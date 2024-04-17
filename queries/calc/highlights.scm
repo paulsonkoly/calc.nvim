@@ -1,3 +1,5 @@
+(comment) @comment
+
 (int_lit) @number
 (float_lit) @number.float
 (bool_lit) @boolean
