@@ -1,3 +1,8 @@
+local M = {}
+
+M.setup = function()
+end
+
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.calc = {
   install_info = {
@@ -12,3 +17,5 @@ parser_config.calc = {
 }
 
 vim.filetype.add({ extension = { calc = "calc" } })
+
+return M
